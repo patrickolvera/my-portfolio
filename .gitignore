@@ -1,3 +1,5 @@
-.vscode/
-sass/
+.vscode
+sass
 .DS_Store
+node_modules
+build

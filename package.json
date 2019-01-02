@@ -1,0 +1,31 @@
+{
+  "name": "portfolio.v.1.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patrickolvera/my-portfolio.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Patrick Olvera",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/patrickolvera/my-portfolio/issues"
+  },
+  "homepage": "https://github.com/patrickolvera/my-portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "nodemailer": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}
