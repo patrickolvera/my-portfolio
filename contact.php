@@ -2,7 +2,7 @@
 if(isset($_POST['email'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "patrickolvera@gmail.com";
+    $email_to = "me@patrickolvera.com";
     $email_subject = "Portfolio Message";
  
     function died($error) {
@@ -55,8 +55,49 @@ $headers = 'From: '.$email_from."\r\n".
 ?>
  
 <!-- include your own success html here -->
- 
-Thank you for contacting us. We will be in touch with you very soon.
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Patrick Olvera</title>
+	<link rel="shortcut icon" href="images/favicon-coffee.ico" type="image/x-icon">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body id="override" class="is-preload">
+  
+  <!-- Main -->
+	<div id="main" class="contact">
+
+		<!-- Intro -->
+		<section id="top" class="one dark cover">
+			<div class="container">
+
+				<header>
+          <h2 class="alt">Thanks for contacting me! <br/>
+            I'll get back to you as soon as possible.</h2>
+        </header>
+        
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<div id="footer" class="contact">
+
+		<!-- Copyright -->
+		<ul class="copyright">
+			<li>&copy; Patrick Olvera 2019. All rights reserved.</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
  
 <?php
  

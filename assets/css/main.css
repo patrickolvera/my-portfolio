@@ -2674,3 +2674,24 @@ input, select, textarea {
 				}
 
 	}
+
+	/* Contact.php Page */
+	#override #main.contact {
+		margin: auto;
+		width: 100%;
+		height: 80vh;
+	}
+
+	#override #main #top {
+		height: 100%;
+	}
+	
+	#override #main.contact .alt {
+		margin-top: 10vh;
+	}
+
+	#override #footer.contact {
+		margin: auto;
+		width: 100%;
+		height: 20vh;
+	}
