@@ -97,7 +97,7 @@
 	// Toggle.
 	$(
 		'<div id="headerToggle">' +
-		'<a href="#header" class="toggle"></a>' +
+		'<a href="#header" class="toggle sidebar" aria-label="></a>' +
 		'</div>'
 	)
 		.appendTo($body);
