@@ -59,8 +59,8 @@
 			// Scrollex.
 			$section.scrollex({
 				mode: 'middle',
-				top: '-10vh',
-				bottom: '-10vh',
+				top: '-8vh',
+				bottom: '-8vh',
 				initialize: function () {
 
 					// Deactivate section.
@@ -97,7 +97,7 @@
 	// Toggle.
 	$(
 		'<div id="headerToggle">' +
-		'<a href="#header" class="toggle sidebar" aria-label="></a>' +
+		'<a href="#header" class="toggle sidebar" aria-label="toggle sidebar"></a>' +
 		'</div>'
 	)
 		.appendTo($body);

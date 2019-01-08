@@ -1,3 +1,8 @@
+<!-------------------------------------
+	TODO:
+- Responsive images (srcset);
+-------------------------------------->
+
 <!DOCTYPE HTML>
 <html lang="en">
 
@@ -60,14 +65,13 @@
 			<div class="container">
 
 				<header>
-					<h2 class="alt">Hi! I'm <strong>Patrick</strong>, a Front End Web Developer<br />
-						with a passion for building things!</h2>
+					<h2 class="alt">Hi! I'm <strong>Patrick</strong>, a Front End Web Developer.</h2>
 					<p>I'm currently available for hire!<br />
 					</p>
 				</header>
 
 				<footer>
-					<a href="#portfolio" class="button scrolly">View My Work</a>
+					<a href="#contact" class="button scrolly">Contact Me</a>
 				</footer>
 
 			</div>
@@ -81,18 +85,19 @@
 					<h2>Portfolio</h2>
 				</header>
 
-				<p>Take a peek at some of the things I've built!</p>
+				<p class="portfolio-subtext">Take a peek at some of the things I've built!</p>
 
 				<div class="row">
-					<div class="col-10 col-12-mobile">
+					<div class="col-6 col-12-mobile">
 						<article class="item">
 							<h3>Neighborhood Map</h3>
-							<video width="100%" height="100%" controls preload="none" poster="images/neighborhood-map_960x720.jpg" muted>
-								<source src="videos/neighborhood-map_960x720.webm" type="video/webm">
-								<source src="videos/neighborhood-map_960x720.mp4" type="video/mp4">
-							</video>
+							<div class="image">
+								<a href="http://neighborhood-map.patrickolvera.surge.sh/" target="_blank" rel="noopener noreferrer">
+									<img data-src="images/neighborhood-map_960x720.jpg" class="lazyload" alt="neighborhood map app">
+								</a>
+							</div>
 							<header>
-								<p>A React map app using Google Maps and Foursquare APIs.</p>
+								<p>A map app using Google Maps and Foursquare APIs.</p>
 								<h3>Tech Used</h3>
 								<ul class="icons">
 									<li><i class="tech fab fa-react"></i><span>React JS</span></li>
@@ -107,10 +112,11 @@
 						</article>
 						<article class="item">
 							<h3>Lisa's Doggy Care</h3>
-							<video width="100%" height="100%" controls preload="none" poster="images/lisas-doggy-care_960x720.jpg" muted>
-								<source src="videos/lisas-doggy-care_960x720.webm" type="video/webm">
-								<source src="videos/lisas-doggy-care_960x720.mp4" type="video/mp4">
-							</video>
+							<div class="image">
+								<a href="https://lisasdoggycare.com" target="_blank" rel="noopener noreferrer">
+									<img data-src="images/lisas-doggy-care_960x720.jpg" class="lazyload" alt="lisas doggy care website">
+								</a>
+							</div>
 							<header>
 								<p>A website I built for a local dog boarding business.</p>
 								<h3>Tech Used</h3>
@@ -125,13 +131,14 @@
 							</header>
 						</article>
 					</div>
-					<div class="col-10 col-12-mobile">
+					<div class="col-6 col-12-mobile">
 						<article class="item">
 							<h3>MyReads</h3>
-							<video width="100%" height="100%" controls preload="none" poster="images/myreads_960x720.jpg" muted>
-								<source src="videos/myreads_960x720.webm" type="video/webm">
-								<source src="videos/myreads_960x720.mp4" type="video/mp4">
-							</video>
+							<div class="image">
+								<a href="http://myreads.patrickolvera.surge.sh" target="_blank" rel="noopener noreferrer">
+									<img data-src="images/myreads_960x720.jpg" class="lazyload" alt="my reads app">
+								</a>
+							</div>
 							<header>
 								<p>
 									A book tracking app using React.js
@@ -149,13 +156,14 @@
 						</article>
 						<article class="item">
 							<h3>Restaurant Reviews</h3>
-							<video width="100%" height="100%" controls preload="none" poster="images/restaurant-reviews_960x720.jpg" muted>
-								<source src="videos/restaurant-reviews_960x720.webm" type="video/webm">
-								<source src="videos/restaurant-reviews_960x720.mp4" type="video/mp4">
-							</video>
+							<div class="image">
+								<a href="http://restaurant-reviews.patrickolvera.surge.sh" target="_blank" rel="noopener noreferrer">
+									<img data-src="images/restaurant-reviews_960x720.jpg" class="lazyload" alt="restaurant reviews website">
+								</a>
+							</div>
 							<header>
-								<p>
-									A site I upgraded to be mobile responsive, with an improved design, and latest best practices.
+								<p class="subtext">
+									Site redesign thats mobile, accessible, and a progressive web app.
 								</p>
 								<h3>Tech Used</h3>
 								<ul class="icons">
@@ -186,17 +194,10 @@
 				<div class="row">
 					<div class="col-10 col-12-mobile">
 						<a href="#" class="image featured"><img class="lazyload" id="featured" data-src="images/monkey-selfie.jpg" alt="Selfie with a monkey" /></a>
-
 						<p>
-							I am fueled by my passion for learning and understanding web technologies!
-							Being a lifelong learner is a core aspect of my personality. I'm excited to
-							continue achieving further mastery in software engineering and building cool stuff!
-						</p>
-						<p>
-							I belive that all worthwhile achievements require a detailed vision, a well thought
-							out plan of action, and the ability to ingrain those actions into routines.
-							A belief I embody in my physical fitness regimen, diet, investments, and
-							coding!
+							When I'm not expanding my web developer skills, I am an active position/swing trader in financial markets, lift weights, and an avid reader. 
+							I also love to travel, and experience different cultures. I recently spent 2 years backpacking Australia and South East Asia. 
+							I am extremely goal oriented. Pursuing my objectives is what gets me up in the morning.
 						</p>
 					</div>
 				</div>
@@ -214,8 +215,8 @@
 					<div class="col-10 col-12-mobile">
 						<p>
 							I am currently working on both client and personal projects. I welcome
-							new challanges and professional opportunities to apply my skills! Fill out the
-							form below or reach out to
+							new challenges and professional opportunities to apply my skills! Fill out the
+							form below, or reach out to
 							<a href="mailto:patrickolvera@gmail.com">PatrickOlvera@gmail.com</a> to connect!
 						</p>
 					</div>

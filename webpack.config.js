@@ -25,24 +25,24 @@ module.exports = {
       from: './src/**/**/**/**',
       to: path.resolve(__dirname, 'dist')
     }]),
-    new ImageminPlugin({
-      pngquant: ({quality: '50'}),
-      plugins: [imageminMozjpeg({quality: '50'})]
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-      chunkFilename: "[id].css"
-    }),
+    // new ImageminPlugin({
+    //   pngquant: ({quality: '50'}),
+    //   plugins: [imageminMozjpeg({quality: '50'})]
+    // }),
+    // new MiniCssExtractPlugin({
+    //   filename: "[name].css",
+    //   chunkFilename: "[id].css"
+    // }),
   ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader"
-        ]
-      }
-    ]
-  }
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.css$/,
+  //       use: [
+  //         MiniCssExtractPlugin.loader,
+  //         "css-loader"
+  //       ]
+  //     }
+  //   ]
+  // }
 }
