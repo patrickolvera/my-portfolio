@@ -3,262 +3,415 @@
 - Responsive images (srcset);
 -------------------------------------->
 
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Patrick Olvera</title>
+    <link
+      rel="shortcut icon"
+      href="images/favicon-coffee.ico"
+      type="image/x-icon"
+    />
+    <meta
+      name="Description"
+      content="Patrick Olvera. Front End Web Developer located in MN, USA"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <script src="assets/js/lazysizes.min.js" async></script>
+  </head>
 
-<head>
-	<title>Patrick Olvera</title>
-	<link rel="shortcut icon" href="images/favicon-coffee.ico" type="image/x-icon">
-	<meta name="Description" content="Patrick Olvera. Front End Web Developer located in MN, USA">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
-	 crossorigin="anonymous">
-	<script src="assets/js/lazysizes.min.js" async></script>
-</head>
+  <body id="override" class="is-preload">
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"
+            ><img
+              data-src="images/round-head-shot.png"
+              class="lazyload"
+              alt="Patrick Olvera Portrait"
+          /></span>
+          <h1 id="title">Patrick Olvera</h1>
+          <p>Front End Web Developer</p>
+        </div>
 
-<body id="override" class="is-preload">
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#top" id="top-link"
+                ><span class="icon fa-home">Intro</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" id="portfolio-link"
+                ><span class="icon fa-th">Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" id="about-link"
+                ><span class="icon fa-user">About Me</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contact-link"
+                ><span class="icon fa-envelope">Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-	<!-- Header -->
-	<div id="header">
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li>
+            <a
+              href="https://github.com/patrickolvera"
+              class="icon fa-github"
+              aria-label="Github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:patrickolvera@gmail.com"
+              class="icon fa-envelope"
+              aria-label="Email"
+              ><span class="label">Email</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/ThisIsOlvera"
+              class="icon fa-twitter"
+              aria-label="Twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
 
-		<div class="top">
+    <!-- Main -->
+    <div id="main">
+      <!-- Intro -->
+      <section id="top" class="one dark cover">
+        <div class="container">
+          <header>
+            <h2 class="alt">
+              Hi! I'm <strong>Patrick</strong>, a Front End Web Developer.
+            </h2>
+            <p>I'm currently available for hire!<br /></p>
+          </header>
 
-			<!-- Logo -->
-			<div id="logo">
-				<span class="image avatar48"><img data-src="images/round-head-shot.png" class="lazyload" alt="Patrick Olvera Portrait" /></span>
-				<h1 id="title">Patrick Olvera</h1>
-				<p>Front End Web Developer</p>
-			</div>
+          <footer>
+            <a href="#contact" class="button scrolly">Contact Me</a>
+          </footer>
+        </div>
+      </section>
 
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="#top" id="top-link"><span class="icon fa-home">Intro</span></a></li>
-					<li><a href="#portfolio" id="portfolio-link"><span class="icon fa-th">Portfolio</span></a></li>
-					<li><a href="#about" id="about-link"><span class="icon fa-user">About Me</span></a></li>
-					<li><a href="#contact" id="contact-link"><span class="icon fa-envelope">Contact</span></a></li>
-				</ul>
-			</nav>
+      <!-- Portfolio -->
+      <section id="portfolio" class="two">
+        <div class="container">
+          <header><h2>Portfolio</h2></header>
 
-		</div>
+          <p class="portfolio-subtext">
+            Take a peek at some of the things I've built!
+          </p>
 
-		<div class="bottom">
+          <div class="row">
+            <div class="col-6 col-12-mobile">
+              <article class="item">
+                <h3>Neighborhood Map</h3>
+                <div class="image">
+                  <a
+                    href="https://neighborhood-map-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      data-src="images/neighborhood-map_960x720.jpg"
+                      class="lazyload"
+                      alt="neighborhood map app"
+                    />
+                  </a>
+                </div>
+                <header>
+                  <p>A map app using Google Maps and Foursquare APIs.</p>
+                  <h3>Tech Used</h3>
+                  <ul class="icons">
+                    <li>
+                      <i class="tech fab fa-react"></i><span>React JS</span>
+                    </li>
+                    <li><i class="tech fab fa-html5"></i><span>HTML</span></li>
+                    <li>
+                      <i class="tech fab fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn-link"
+                    href="https://neighborhood-map-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live">See Live</button></a
+                  >
+                  <a
+                    class="btn-link"
+                    href="https://github.com/patrickolvera/neighborhood-map"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live code">View Code</button></a
+                  >
+                </header>
+              </article>
+              <article class="item">
+                <h3>Lisa's Doggy Care</h3>
+                <div class="image">
+                  <a
+                    href="https://lisasdoggycare.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      data-src="images/lisas-doggy-care_960x720.jpg"
+                      class="lazyload"
+                      alt="lisas doggy care website"
+                    />
+                  </a>
+                </div>
+                <header>
+                  <p>A website I built for a local dog boarding business.</p>
+                  <h3>Tech Used</h3>
+                  <ul class="icons">
+                    <li>
+                      <i class="tech fab fa-js-square"></i
+                      ><span>JavaScript</span>
+                    </li>
+                    <li><i class="tech fab fa-html5"></i><span>HTML</span></li>
+                    <li>
+                      <i class="tech fab fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn-link"
+                    href="https://lisasdoggycare.com"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live">See Live</button></a
+                  >
+                  <a
+                    class="btn-link"
+                    href="https://github.com/patrickolvera/Lisas-Doggy-Care"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live code">View Code</button></a
+                  >
+                </header>
+              </article>
+            </div>
+            <div class="col-6 col-12-mobile">
+              <article class="item">
+                <h3>MyReads</h3>
+                <div class="image">
+                  <a
+                    href="https://myreads-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      data-src="images/myreads_960x720.jpg"
+                      class="lazyload"
+                      alt="my reads app"
+                    />
+                  </a>
+                </div>
+                <header>
+                  <p>A book tracking app using React.js</p>
+                  <h3>Tech Used</h3>
+                  <ul class="icons">
+                    <li>
+                      <i class="tech fab fa-react"></i><span>React JS</span>
+                    </li>
+                    <li><i class="tech fab fa-html5"></i><span>HTML</span></li>
+                    <li>
+                      <i class="tech fab fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn-link"
+                    href="https://myreads-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live">See Live</button></a
+                  >
+                  <a
+                    class="btn-link"
+                    href="https://github.com/patrickolvera/myReads"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live code">View Code</button></a
+                  >
+                </header>
+              </article>
+              <article class="item">
+                <h3>Restaurant Reviews</h3>
+                <div class="image">
+                  <a
+                    href="https://restaurant-reviews-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      data-src="images/restaurant-reviews_960x720.jpg"
+                      class="lazyload"
+                      alt="restaurant reviews website"
+                    />
+                  </a>
+                </div>
+                <header>
+                  <p class="subtext">
+                    Site redesign thats mobile, accessible, and works offline.
+                  </p>
+                  <h3>Tech Used</h3>
+                  <ul class="icons">
+                    <li>
+                      <i class="tech fab fa-js-square"></i
+                      ><span>JavaScript</span>
+                    </li>
+                    <li><i class="tech fab fa-html5"></i><span>HTML</span></li>
+                    <li>
+                      <i class="tech fab fa-css3-alt"></i><span>CSS</span>
+                    </li>
+                  </ul>
+                  <a
+                    class="btn-link"
+                    href="https://restaurant-reviews-patrickolvera.netlify.com"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live">See Live</button></a
+                  >
+                  <a
+                    class="btn-link"
+                    href="https://github.com/patrickolvera/restaurant-reviews-app"
+                    target="_blank"
+                    rel="noopener"
+                    ><button class="live code">View Code</button></a
+                  >
+                </header>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Social Icons -->
-			<ul class="icons">
-				<li><a href="https://github.com/patrickolvera" class="icon fa-github" aria-label="Github"><span class="label">Github</span></a></li>
-				<li><a href="mailto:patrickolvera@gmail.com" class="icon fa-envelope" aria-label="Email"><span class="label">Email</span></a></li>
-				<li><a href="https://twitter.com/ThisIsOlvera" class="icon fa-twitter" aria-label="Twitter"><span class="label">Twitter</span></a></li>
-			</ul>
+      <!-- About Me -->
+      <section id="about" class="three">
+        <div class="container">
+          <header><h2>About Me</h2></header>
+          <div class="row">
+            <div class="col-10 col-12-mobile">
+              <a href="#" class="image featured"
+                ><img
+                  class="lazyload"
+                  id="featured"
+                  data-src="images/monkey-selfie.jpg"
+                  alt="Selfie with a monkey"
+              /></a>
+              <p>
+                When I'm not expanding my web developer skills, I am an active
+                position/swing trader in financial markets, lift weights, and an
+                avid reader. I also love to travel, and experience different
+                cultures. I recently spent 2 years backpacking Australia and
+                South East Asia. I am extremely goal oriented. Pursuing my
+                objectives is what gets me up in the morning.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		</div>
+      <!-- Contact -->
+      <section id="contact" class="four">
+        <div class="container">
+          <header><h2>Contact</h2></header>
+          <div class="row">
+            <div class="col-10 col-12-mobile">
+              <p>
+                I am currently working on both client and personal projects. I
+                welcome new challenges and professional opportunities to apply
+                my skills! Fill out the form below, or reach out to
+                <a href="mailto:patrickolvera@gmail.com"
+                  >PatrickOlvera@gmail.com</a
+                >
+                to connect!
+              </p>
+            </div>
+          </div>
 
-	</div>
+          <form method="post" action="contact.php">
+            <div class="row">
+              <div class="col-6 col-12-mobile">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  aria-label="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="col-6 col-12-mobile">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  aria-label="email"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  aria-label="message"
+                  required
+                  minlength="3"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <input type="submit" value="Send Message" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
 
-	<!-- Main -->
-	<div id="main">
+    <!-- Footer -->
+    <div id="footer">
+      <!-- Copyright -->
+      <ul class="copyright">
+        <li>&copy; Patrick Olvera 2019. All rights reserved.</li>
+      </ul>
+    </div>
 
-		<!-- Intro -->
-		<section id="top" class="one dark cover">
-			<div class="container">
-
-				<header>
-					<h2 class="alt">Hi! I'm <strong>Patrick</strong>, a Front End Web Developer.</h2>
-					<p>I'm currently available for hire!<br />
-					</p>
-				</header>
-
-				<footer>
-					<a href="#contact" class="button scrolly">Contact Me</a>
-				</footer>
-
-			</div>
-		</section>
-
-		<!-- Portfolio -->
-		<section id="portfolio" class="two">
-			<div class="container">
-
-				<header>
-					<h2>Portfolio</h2>
-				</header>
-
-				<p class="portfolio-subtext">Take a peek at some of the things I've built!</p>
-
-				<div class="row">
-					<div class="col-6 col-12-mobile">
-						<article class="item">
-							<h3>Neighborhood Map</h3>
-							<div class="image">
-								<a href="http://neighborhood-map.patrickolvera.surge.sh/" target="_blank" rel="noopener noreferrer">
-									<img data-src="images/neighborhood-map_960x720.jpg" class="lazyload" alt="neighborhood map app">
-								</a>
-							</div>
-							<header>
-								<p>A map app using Google Maps and Foursquare APIs.</p>
-								<h3>Tech Used</h3>
-								<ul class="icons">
-									<li><i class="tech fab fa-react"></i><span>React JS</span></li>
-									<li><i class="tech fab fa-html5"></i><span>HTML</span></li>
-									<li><i class="tech fab fa-css3-alt"></i><span>CSS</span></li>
-								</ul>
-								<a class="btn-link" href="http://neighborhood-map.patrickolvera.surge.sh/" target="_blank" rel="noopener"><button class="live">See
-										Live</button></a>
-								<a class="btn-link" href="https://github.com/patrickolvera/neighborhood-map" target="_blank" rel="noopener"><button class="live code">View
-										Code</button></a>
-							</header>
-						</article>
-						<article class="item">
-							<h3>Lisa's Doggy Care</h3>
-							<div class="image">
-								<a href="https://lisasdoggycare.com" target="_blank" rel="noopener noreferrer">
-									<img data-src="images/lisas-doggy-care_960x720.jpg" class="lazyload" alt="lisas doggy care website">
-								</a>
-							</div>
-							<header>
-								<p>A website I built for a local dog boarding business.</p>
-								<h3>Tech Used</h3>
-								<ul class="icons">
-									<li><i class="tech fab fa-js-square"></i><span>JavaScript</span></li>
-									<li><i class="tech fab fa-html5"></i><span>HTML</span></li>
-									<li><i class="tech fab fa-css3-alt"></i><span>CSS</span></li>
-								</ul>
-								<a class="btn-link" href="https://lisasdoggycare.com" target="_blank" rel="noopener"><button class="live">See Live</button></a>
-								<a class="btn-link" href="https://github.com/patrickolvera/Lisas-Doggy-Care" target="_blank" rel="noopener"><button class="live code">View
-										Code</button></a>
-							</header>
-						</article>
-					</div>
-					<div class="col-6 col-12-mobile">
-						<article class="item">
-							<h3>MyReads</h3>
-							<div class="image">
-								<a href="http://myreads.patrickolvera.surge.sh" target="_blank" rel="noopener noreferrer">
-									<img data-src="images/myreads_960x720.jpg" class="lazyload" alt="my reads app">
-								</a>
-							</div>
-							<header>
-								<p>
-									A book tracking app using React.js
-								</p>
-								<h3>Tech Used</h3>
-								<ul class="icons">
-									<li><i class="tech fab fa-react"></i><span>React JS</span></li>
-									<li><i class="tech fab fa-html5"></i><span>HTML</span></li>
-									<li><i class="tech fab fa-css3-alt"></i><span>CSS</span></li>
-								</ul>
-								<a class="btn-link" href="http://myreads.patrickolvera.surge.sh" target="_blank" rel="noopener"><button class="live">See Live</button></a>
-								<a class="btn-link" href="https://github.com/patrickolvera/myReads" target="_blank" rel="noopener"><button class="live code">View
-										Code</button></a>
-							</header>
-						</article>
-						<article class="item">
-							<h3>Restaurant Reviews</h3>
-							<div class="image">
-								<a href="http://restaurant-reviews.patrickolvera.surge.sh" target="_blank" rel="noopener noreferrer">
-									<img data-src="images/restaurant-reviews_960x720.jpg" class="lazyload" alt="restaurant reviews website">
-								</a>
-							</div>
-							<header>
-								<p class="subtext">
-									Site redesign thats mobile, accessible, and a progressive web app.
-								</p>
-								<h3>Tech Used</h3>
-								<ul class="icons">
-									<li><i class="tech fab fa-js-square"></i><span>JavaScript</span></li>
-									<li><i class="tech fab fa-html5"></i><span>HTML</span></li>
-									<li><i class="tech fab fa-css3-alt"></i><span>CSS</span></li>
-								</ul>
-								<a class="btn-link" href="http://restaurant-reviews.patrickolvera.surge.sh" target="_blank" rel="noopener"><button class="live">See
-										Live</button></a>
-								<a class="btn-link" href="https://github.com/patrickolvera/restaurant-reviews-app" target="_blank" rel="noopener"><button
-									 class="live code">View
-										Code</button></a>
-							</header>
-						</article>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<!-- About Me -->
-		<section id="about" class="three">
-			<div class="container">
-
-				<header>
-					<h2>About Me</h2>
-				</header>
-				<div class="row">
-					<div class="col-10 col-12-mobile">
-						<a href="#" class="image featured"><img class="lazyload" id="featured" data-src="images/monkey-selfie.jpg" alt="Selfie with a monkey" /></a>
-						<p>
-							When I'm not expanding my web developer skills, I am an active position/swing trader in financial markets, lift weights, and an avid reader. 
-							I also love to travel, and experience different cultures. I recently spent 2 years backpacking Australia and South East Asia. 
-							I am extremely goal oriented. Pursuing my objectives is what gets me up in the morning.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Contact -->
-		<section id="contact" class="four">
-			<div class="container">
-
-				<header>
-					<h2>Contact</h2>
-				</header>
-				<div class="row">
-					<div class="col-10 col-12-mobile">
-						<p>
-							I am currently working on both client and personal projects. I welcome
-							new challenges and professional opportunities to apply my skills! Fill out the
-							form below, or reach out to
-							<a href="mailto:patrickolvera@gmail.com">PatrickOlvera@gmail.com</a> to connect!
-						</p>
-					</div>
-				</div>
-
-				<form method="post" action="contact.php">
-					<div class="row">
-						<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" aria-label="name" required minlength="2"></div>
-						<div class="col-6 col-12-mobile"><input type="email" name="email" placeholder="Email" aria-label="email"required></div>
-						<div class="col-12">
-							<textarea name="message" placeholder="Message" aria-label="message" required minlength="3"></textarea>
-						</div>
-						<div class="col-12">
-							<input type="submit" value="Send Message" />
-						</div>
-					</div>
-				</form>
-
-			</div>
-		</section>
-
-	</div>
-
-	<!-- Footer -->
-	<div id="footer">
-
-		<!-- Copyright -->
-		<ul class="copyright">
-			<li>&copy; Patrick Olvera 2019. All rights reserved.</li>
-		</ul>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
