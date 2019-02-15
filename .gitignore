@@ -7,3 +7,5 @@ dist/
 videos/
 *.mp4
 *.webm
+src/contact.php
+webpack.config.js
