@@ -12,7 +12,7 @@
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.3",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
